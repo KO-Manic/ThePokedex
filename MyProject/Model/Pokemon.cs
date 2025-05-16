@@ -6,9 +6,11 @@ namespace MyProject.Model
     {
         public int Id { get; set; }
 
-        [Required] public string Name { get; set; }
+        [Required]
+        public string Name { get; set; }
 
-        [Required] public string Type { get; set; }
+        [Required]
+        public string Type { get; set; }
 
         [Required]
         [Range(1, 800, ErrorMessage = "Total must be between 1 and 800")]
@@ -34,7 +36,8 @@ namespace MyProject.Model
         [Range(1, 10, ErrorMessage = "Generation must be between 1 and 10")]
         public int Generation { get; set; }
 
-        [Required] public bool Legendary { get; set; }
+        [Required]
+        public bool Legendary { get; set; }
 
         public List<Trainer> Trainers { get; set; }
     }
